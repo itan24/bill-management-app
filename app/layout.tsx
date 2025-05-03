@@ -22,7 +22,6 @@ export default function RootLayout({
   if (!publishableKey) {
     throw new Error('Missing NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY in environment variables');
   }
-  console.log('Clerk Publishable Key:', publishableKey);
 
   return (
     <ClerkProvider publishableKey={publishableKey}>

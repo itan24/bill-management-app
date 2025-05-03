@@ -108,7 +108,7 @@ export default function MeterDetails() {
     };
 
     checkAuthAndFetchData();
-  }, [isSignedIn, userId, profileId]);
+  }, [isSignedIn, userId, profileId, getToken]);
 
   // Handle adding a new reading
   const handleAddReading = (newReading: Reading) => {
